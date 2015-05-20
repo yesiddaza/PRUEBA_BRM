@@ -9,6 +9,10 @@ public class ProductDataController : MonoBehaviour {
 	[SerializeField]
 	private Button doneButton;
 	[SerializeField]
+	private Button editButton;
+	[SerializeField]
+	private Button deleteButton;
+	[SerializeField]
 	protected GameStateBehaviour gameStateBehaviour;
 	
 	void Start () {
@@ -17,6 +21,12 @@ public class ProductDataController : MonoBehaviour {
 		});
 		doneButton.onClick.AddListener (delegate {
 			gameStateBehaviour.GameState = GameState.ShowingProductsList;
+		});
+		editButton.onClick.AddListener (delegate {
+			Debug.Log("edito!");
+		});
+		deleteButton.onClick.AddListener (delegate {
+			Debug.Log("borro!");
 		});
 	}
 

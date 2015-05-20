@@ -1,15 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CreateDataController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ProductDataController.cs">
     <Files>
-      <File FileName="Assets\Scripts\GameManager.cs" Line="95" Column="16" />
+      <File FileName="Assets\Scripts\CreateDataController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ProductDataController.cs" Line="29" Column="24" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameStateBehaviour.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GameState.cs" Line="9" Column="20" />
-      <File FileName="Assets\Scripts\CreateDataController.cs" Line="19" Column="22" />
-      <File FileName="Assets\Scripts\TrademarksListController.cs" Line="21" Column="3" />
-      <File FileName="Assets\Scripts\ProductsListWindow.cs" Line="24" Column="64" />
-      <File FileName="Assets\Scripts\MainButtons.cs" Line="5" Column="43" />
-      <File FileName="Assets\Scripts\ProductDataController.cs" Line="16" Column="3" />
+      <File FileName="Assets\Scripts\GameState.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TrademarksListController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ProductsListWindow.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MainButtons.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
