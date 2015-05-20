@@ -24,13 +24,12 @@ public class ProductsListWindow  : MonoBehaviour {
 			gameStateBehaviour.GameState = GameState.ShowingProductData;
 		});
 	}
-
-	public void SetActive ()
-	{
+	
+	public void SetActive() {
 		gameObject.SetActive (true);
 	}
-	public void SetInactive ()
-	{
+	
+	public void SetInactive (){
 		gameObject.SetActive (false);
 	}
 }

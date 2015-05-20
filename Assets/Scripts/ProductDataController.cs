@@ -7,20 +7,24 @@ public class ProductDataController : MonoBehaviour {
 	[SerializeField]
 	private Button homeButton;
 	[SerializeField]
+	private Button doneButton;
+	[SerializeField]
 	protected GameStateBehaviour gameStateBehaviour;
 	
 	void Start () {
 		homeButton.onClick.AddListener (delegate {
 			gameStateBehaviour.GameState = GameState.ShowingMainWindow;
 		});
-	}
-	public void SetActive ()
-	{
-		gameObject.SetActive (true);
-	}
-	public void SetInactive ()
-	{
-		gameObject.SetActive (false);
+		doneButton.onClick.AddListener (delegate {
+			gameStateBehaviour.GameState = GameState.ShowingProductsList;
+		});
 	}
 
+	public void SetActive() {
+		gameObject.SetActive (true);
+	}
+
+	public void SetInactive (){
+		gameObject.SetActive (false);
+	}
 }
