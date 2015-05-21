@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -10,19 +10,19 @@ public class MainButtons : MonoBehaviour {
 	private Button trademarkButton;
 	[SerializeField]
 	private Button productButton;
-	private GameStateBehaviour gameStateBehaviour;
+	private WindowStateBehaviour windowStateBehaviour;
 
 
 	void Start () {
-		gameStateBehaviour = GameObject.FindGameObjectWithTag ("GameState").GetComponent (typeof(GameStateBehaviour)) as GameStateBehaviour;
+		windowStateBehaviour = GameObject.FindGameObjectWithTag ("WindowState").GetComponent (typeof(WindowStateBehaviour)) as WindowStateBehaviour;
 		createDataButton.onClick.AddListener (delegate {
-			gameStateBehaviour.GameState = GameState.ShowingCreateData;
+			windowStateBehaviour.WindowState = WindowState.ShowingCreateData;
 		});
 		trademarkButton.onClick.AddListener (delegate {
-			gameStateBehaviour.GameState = GameState.ShowingTrademarksList;
+			windowStateBehaviour.WindowState = WindowState.ShowingTrademarksList;
 		});
 		productButton.onClick.AddListener (delegate {
-			gameStateBehaviour.GameState = GameState.ShowingProductsList;
+			windowStateBehaviour.WindowState = WindowState.ShowingProductsList;
 		});
 	}
 }

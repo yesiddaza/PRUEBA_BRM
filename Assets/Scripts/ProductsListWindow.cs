@@ -11,17 +11,17 @@ public class ProductsListWindow  : MonoBehaviour {
 	[SerializeField]
 	private Button productButton;
 	[SerializeField]
-	protected GameStateBehaviour gameStateBehaviour;
+	protected WindowStateBehaviour windowStateBehaviour;
 	
 	void Start () {
 		homeButton.onClick.AddListener (delegate {
-			gameStateBehaviour.GameState = GameState.ShowingMainWindow;
+			windowStateBehaviour.WindowState = WindowState.ShowingMainWindow;
 		});
 		searchButton.onClick.AddListener (delegate {
 			Debug.Log("Busca");
 		});
 		productButton.onClick.AddListener (delegate {
-			gameStateBehaviour.GameState = GameState.ShowingProductData;
+			windowStateBehaviour.WindowState = WindowState.ShowingProductData;
 		});
 	}
 	

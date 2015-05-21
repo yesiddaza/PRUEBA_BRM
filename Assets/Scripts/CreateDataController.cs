@@ -13,7 +13,7 @@ public class CreateDataController : MonoBehaviour {
 	[SerializeField]
 	private Button backMessageButton;
 	[SerializeField]
-	protected GameStateBehaviour gameStateBehaviour;
+	protected WindowStateBehaviour windowStateBehaviour;
 	[SerializeField]
 	private InputField name;
 	[SerializeField]
@@ -32,10 +32,11 @@ public class CreateDataController : MonoBehaviour {
 	private Text SaveMessageText;
 	[SerializeField]
 	private GameObject SaveMessagePanel;
+	private Product product;
 
 	void Start () {
 		homeButton.onClick.AddListener (delegate {
-			gameStateBehaviour.GameState = GameState.ShowingMainWindow;
+			windowStateBehaviour.WindowState = WindowState.ShowingMainWindow;
 		});
 		saveButton.onClick.AddListener (delegate {
 			saveData();
@@ -55,7 +56,7 @@ public class CreateDataController : MonoBehaviour {
 
 	private void saveData ()
 	{
-		Product product = new Product ();
+		product = new Product ();
 		List<string> newInfo = GetInfoByInputField ();
 		bool IsValidInfo = IsValidSize (newInfo [1].ToUpper ()) && IsInfoANumber (newInfo [4]) && IsInfoANumber (newInfo [5]) && IsFullInfo (newInfo) && IsReferenceLengthCorrect (newInfo [4]) && IsValidDate (newInfo [6]);
 		if (IsValidInfo) {
@@ -64,7 +65,8 @@ public class CreateDataController : MonoBehaviour {
 			product.observations = newInfo [2];
 			product.trademark = GetProductTrademark (newInfo [3], int.Parse (newInfo [4]));
 			product.quantity = int.Parse (newInfo [5]);
-			product.date = newInfo [6];			
+			product.date = newInfo [6];
+			CatalogPersistence.SaveProduct(product);
 			SaveMessageText.text = "Guardado!";
 			PutSpacesInBlank();
 		}

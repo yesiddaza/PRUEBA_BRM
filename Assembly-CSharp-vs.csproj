@@ -47,16 +47,17 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Catalog.cs" />
+     <Compile Include="Assets\Scripts\CatalogPersistence.cs" />
      <Compile Include="Assets\Scripts\CreateDataController.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\GameState.cs" />
-     <Compile Include="Assets\Scripts\GameStateBehaviour.cs" />
      <Compile Include="Assets\Scripts\MainButtons.cs" />
      <Compile Include="Assets\Scripts\Product.cs" />
      <Compile Include="Assets\Scripts\ProductDataController.cs" />
      <Compile Include="Assets\Scripts\ProductsListWindow.cs" />
      <Compile Include="Assets\Scripts\Trademark.cs" />
      <Compile Include="Assets\Scripts\TrademarksListController.cs" />
+     <Compile Include="Assets\Scripts\WindowManager.cs" />
+     <Compile Include="Assets\Scripts\WindowState.cs" />
+     <Compile Include="Assets\Scripts\WindowStateBehaviour.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

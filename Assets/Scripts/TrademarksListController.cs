@@ -9,14 +9,15 @@ public class TrademarksListController : MonoBehaviour {
 	[SerializeField]
 	private Button searchButton;
 	[SerializeField]
-	protected GameStateBehaviour gameStateBehaviour;
+	protected WindowStateBehaviour windowStateBehaviour;
 	
 	void Start () {
 		homeButton.onClick.AddListener (delegate {
-			gameStateBehaviour.GameState = GameState.ShowingMainWindow;
+			windowStateBehaviour.WindowState = WindowState.ShowingMainWindow;
 		});
 		searchButton.onClick.AddListener (delegate {
-			Debug.Log("Busca");
+			CatalogPersistence.Load();
+			Debug.Log(CatalogPersistence.catalog.products[0].nameProduct);
 		});
 	}
 	

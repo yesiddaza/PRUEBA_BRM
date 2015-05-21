@@ -1,11 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Product.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CatalogPersistence.cs">
     <Files>
-      <File FileName="Assets\Scripts\Product.cs" Line="5" Column="18" />
-      <File FileName="Assets\Scripts\CreateDataController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Trademark.cs" Line="8" Column="2" />
-      <File FileName="..\KaraokeKichua\Assets\scripts\Activity.cs" Line="16" Column="24" />
+      <File FileName="Assets\Scripts\CreateDataController.cs" Line="69" Column="37" />
+      <File FileName="Assets\Scripts\CatalogPersistence.cs" Line="17" Column="14" />
+      <File FileName="Assets\Scripts\TrademarksListController.cs" Line="13" Column="2" />
+      <File FileName="Assets\Scripts\Catalog.cs" Line="12" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

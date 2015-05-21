@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 
+[System.Serializable]
 public class Product {
 	public string nameProduct;
 	public string size;

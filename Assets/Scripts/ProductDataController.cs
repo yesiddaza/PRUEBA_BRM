@@ -13,14 +13,14 @@ public class ProductDataController : MonoBehaviour {
 	[SerializeField]
 	private Button deleteButton;
 	[SerializeField]
-	protected GameStateBehaviour gameStateBehaviour;
+	protected WindowStateBehaviour windowStateBehaviour;
 	
 	void Start () {
 		homeButton.onClick.AddListener (delegate {
-			gameStateBehaviour.GameState = GameState.ShowingMainWindow;
+			windowStateBehaviour.WindowState = WindowState.ShowingMainWindow;
 		});
 		doneButton.onClick.AddListener (delegate {
-			gameStateBehaviour.GameState = GameState.ShowingProductsList;
+			windowStateBehaviour.WindowState = WindowState.ShowingProductsList;
 		});
 		editButton.onClick.AddListener (delegate {
 			Debug.Log("edito!");
