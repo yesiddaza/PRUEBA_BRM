@@ -37,6 +37,7 @@ public class CreateDataController : MonoBehaviour {
 	void Start () {
 		homeButton.onClick.AddListener (delegate {
 			windowStateBehaviour.WindowState = WindowState.ShowingMainWindow;
+			CatalogPersistence.Load();
 		});
 		saveButton.onClick.AddListener (delegate {
 			saveData();

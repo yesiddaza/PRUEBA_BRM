@@ -19,9 +19,11 @@ public class MainButtons : MonoBehaviour {
 			windowStateBehaviour.WindowState = WindowState.ShowingCreateData;
 		});
 		trademarkButton.onClick.AddListener (delegate {
+			CatalogPersistence.Load();
 			windowStateBehaviour.WindowState = WindowState.ShowingTrademarksList;
 		});
 		productButton.onClick.AddListener (delegate {
+			CatalogPersistence.Load();
 			windowStateBehaviour.WindowState = WindowState.ShowingProductsList;
 		});
 	}

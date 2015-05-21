@@ -28,7 +28,7 @@ public static class CatalogPersistence {
 		}
 	}
 	
-	public static void ClearDataLevels (){		
+	public static void ClearProducts (){		
 		Catalog Catalog = new Catalog();
 		Save(catalog);
 	}
